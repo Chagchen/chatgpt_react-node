@@ -3,23 +3,22 @@
 * {
   font-family: 'Open Sans', sans-serif;
   margin: 0;
-  color: white;
+  color: rgba(255, 255, 255);
 }
 
 .app {
-  background-color: #0e2e46;
+  background-color: #173d58;
   display: flex;
   color:aliceblue
 }
 
 .side-bar {
-  background-color: #1f323f;
+  background-color: #244961;
   height: 100vh;
   width: 244px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  list-style-type: none;
 }
 
 button{
@@ -40,15 +39,66 @@ nav {
   padding: 10px;
   margin: 10px;
   height: 100%;
-  list-style-type: none !important;
 }
 
-.history ul li {
+.history li {
   list-style-type: none !important;
+  padding: 15px 0px;
+  cursor: pointer;
 }
 
 .main {
   height: 100vh;
-  background-color:  #314250;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.info {
+  color:rgba(255, 255, 255, 0.5);
+  font-size: 11px;
+  padding: 10px;
+}
+
+.bottom-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-container {
+  position: relative;
+  width: 100%;
+  max-width: 650px;
+}
+
+input {
+  width: 100%;
+  border: none;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.75);
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 12px 15px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0 54px 55px,
+                rgba(0, 0, 0, 0.05) 0 -12px 30px,
+                rgba(0, 0, 0, 0.05) 0 4px 6px,
+                rgba(0, 0, 0, 0.05) 0 12px 3px,
+                rgba(0, 0, 0, 0.05) 0 -3px 5px;
+              }
+
+input:focus {
+  outline: none;
+}
+
+#submit {
+  position: absolute;
+  bottom: 15px;
+  right: 0;
+  cursor: pointer;
 }
